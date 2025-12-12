@@ -100,29 +100,29 @@ h2 {
 #bottomdiv {
     display: flex;
     flex-direction: column; /* stack elements vertically */
-    align-items: flex-start; /* header aligned left, row stays aligned */
+    align-items: flex-start; /* header stays left-aligned */
     gap: 20px;
     padding: 20px;
 }
 
 #bottomheader {
-    margin-left: 30%;
     font-style: oblique;
-}
-
-#bottomtext {
-    background-color: #ddc3c3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 10px 15px #b8a9a9;
+    margin-left: 20%; /* keeps it where you want */
 }
 
 /* flex row: pinicbear and text side by side */
 #pinic-row {
-    margin-left: 20%;
-    margin-bottom: 30px;
     display: flex;
-    gap: 100px;           /* space between image and text */
+    justify-content: center; /* centers the row itself */
+    align-items: flex-start; /* aligns top edges */
+    gap: 50px;               /* space between image and text */
+    width: 100%;             /* full width so justify-content works */
+    margin-bottom: 30px;
+}
+
+#pinicbearblock {
+    display: flex;
+    justify-content: center; /* centers the image in its block */
 }
 
 #pinicbear {
@@ -131,11 +131,12 @@ h2 {
     border-radius: 67px;
 }
 
-/* text next to image */
-#bottomtext p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 30px;
+#bottomtext {
+    background-color: #ddc3c3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px #b8a9a9;
+    max-width: 500px;       /* prevents text from being too wide */
 }
 
 /* bottom image centered */
@@ -151,6 +152,22 @@ h2 {
     border-radius: 50px;
     margin-bottom: 5%;
 }
+
+
+/* bottom image centered */
+#couchblock {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#couch {
+    max-width: 600px;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 5%;
+}
+
 
 /* ===== BUTTONS ===== */
 .button-row {
@@ -314,5 +331,4 @@ h2 {
     background-color: #d3b2b2;
     width: 100%;
     padding: 20px;
-
 }
