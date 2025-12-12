@@ -119,7 +119,7 @@ h2 {
 
 /* flex row: pinicbear and text side by side */
 #pinic-row {
-    margin-left: 30%;
+    margin-left: 20%;
     margin-bottom: 30px;
     display: flex;
     gap: 100px;           /* space between image and text */
@@ -314,4 +314,5 @@ h2 {
     background-color: #d3b2b2;
     width: 100%;
     padding: 20px;
+
 }
