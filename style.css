@@ -13,7 +13,7 @@ h2 {
 }
 
 
-/* === HOME PAGE === */
+/* ====== HOME PAGE ====== */
 .homepage {
     width: 100%;
     display: flex;
@@ -21,7 +21,7 @@ h2 {
     gap: 40px;
 }
 
-/* === TOP SECTION HOME PAGE === */
+/* ====== TOP SECTION HOME PAGE ====== */
 #topdiv {
     width: 100%;
     height: 100%;
@@ -49,7 +49,7 @@ h2 {
     border: 12px solid #ebcbcb;
 }
 
-/* === MIDDLE SECTION HOME PAGE === */
+/* ====== MIDDLE SECTION HOME PAGE ====== */
 #middlediv {
     display: flex;
     flex-direction: row;    
@@ -316,4 +316,5 @@ h2 {
     background-color: #d3b2b2;
     width: 100%;
     padding: 20px;
+
 }
